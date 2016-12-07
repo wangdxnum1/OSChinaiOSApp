@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="108" id="KGk-i7-Jjw" customClass="BlogRewardCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="108"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="107.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="写得不错，打赏作者" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4IM-4o-YNL">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.41568627450980389" green="0.41568627450980389" blue="0.41568627450980389" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7k-qm-hGa">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="CLu-IL-MMF"/>
+                            <constraint firstAttribute="width" constant="50" id="cZF-ie-aJe"/>
+                        </constraints>
+                        <state key="normal" image="btn_pay_normal">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OYv-TX-Deb">
+                        <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="wsX-M4-5Kv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OYv-TX-Deb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="49K-ig-dd6"/>
+                    <constraint firstItem="O7k-qm-hGa" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Eek-ej-McO"/>
+                    <constraint firstItem="O7k-qm-hGa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="RrZ-SH-7wU"/>
+                    <constraint firstAttribute="trailing" secondItem="OYv-TX-Deb" secondAttribute="trailing" constant="15" id="c5S-bE-ptx"/>
+                    <constraint firstItem="O7k-qm-hGa" firstAttribute="centerX" secondItem="4IM-4o-YNL" secondAttribute="centerX" id="flU-IA-5ix"/>
+                    <constraint firstItem="OYv-TX-Deb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="mr8-i8-Ve2"/>
+                    <constraint firstItem="4IM-4o-YNL" firstAttribute="top" secondItem="O7k-qm-hGa" secondAttribute="bottom" constant="8" id="qSN-oB-adA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="rewardButton" destination="O7k-qm-hGa" id="avD-P5-GbW"/>
+            </connections>
+            <point key="canvasLocation" x="-89" y="54"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="btn_pay_normal" width="50" height="50"/>
+    </resources>
+</document>

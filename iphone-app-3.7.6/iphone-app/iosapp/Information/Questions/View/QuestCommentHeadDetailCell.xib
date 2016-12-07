@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="88" id="KGk-i7-Jjw" customClass="QuestCommentHeadDetailCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="87.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="portrait_loading" translatesAutoresizingMaskIntoConstraints="NO" id="Yxm-rc-f5R">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="Ljm-AV-tBe"/>
+                            <constraint firstAttribute="width" constant="36" id="ZIN-4O-63R"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="18"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1天前 (2016-06-24 20:12:01)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m31-xf-2Ln">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.41568627450980389" green="0.41568627450980389" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="luW-r4-QKD">
+                        <color key="backgroundColor" red="0.78431372549019607" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="xbz-6Y-71Z"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pgd-kK-8WZ">
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <inset key="titleEdgeInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="-2" minY="0.0" maxX="10" maxY="0.0"/>
+                        <state key="normal" title="36" image="ic_vote">
+                            <color key="titleColor" red="0.41568627450980389" green="0.41568627450980389" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="梦想岛" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kf-7o-rR2">
+                        <frame key="frameInset" minX="60" minY="10" width="42" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbQ-bI-b15">
+                        <color key="backgroundColor" red="0.78431372549019607" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="0qG-TC-gc5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="m31-xf-2Ln" firstAttribute="top" secondItem="4kf-7o-rR2" secondAttribute="bottom" constant="5" id="07I-tD-djx"/>
+                    <constraint firstItem="Pgd-kK-8WZ" firstAttribute="leading" secondItem="luW-r4-QKD" secondAttribute="trailing" constant="16" id="BVz-fp-Lp2"/>
+                    <constraint firstItem="Yxm-rc-f5R" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="EZ7-Pq-Oz5"/>
+                    <constraint firstAttribute="trailing" secondItem="Pgd-kK-8WZ" secondAttribute="trailing" constant="16" id="IzL-L1-FPL"/>
+                    <constraint firstItem="Pgd-kK-8WZ" firstAttribute="centerY" secondItem="Yxm-rc-f5R" secondAttribute="centerY" id="OMH-Bk-9vC"/>
+                    <constraint firstAttribute="bottom" secondItem="cbQ-bI-b15" secondAttribute="bottom" id="RKY-QY-Knh"/>
+                    <constraint firstItem="4kf-7o-rR2" firstAttribute="top" secondItem="Yxm-rc-f5R" secondAttribute="top" id="RNd-BZ-bMP"/>
+                    <constraint firstItem="Yxm-rc-f5R" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="TQX-yg-fQd"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="m31-xf-2Ln" secondAttribute="trailing" id="VNc-Nl-cVz"/>
+                    <constraint firstItem="cbQ-bI-b15" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ajz-7z-iEk"/>
+                    <constraint firstAttribute="trailing" secondItem="cbQ-bI-b15" secondAttribute="trailing" id="bcz-ac-2Fs"/>
+                    <constraint firstItem="luW-r4-QKD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="beY-pr-Owh"/>
+                    <constraint firstItem="4kf-7o-rR2" firstAttribute="leading" secondItem="Yxm-rc-f5R" secondAttribute="trailing" constant="8" id="oy8-vO-C2f"/>
+                    <constraint firstAttribute="bottom" secondItem="luW-r4-QKD" secondAttribute="bottom" constant="7" id="qOd-WT-eKz"/>
+                    <constraint firstItem="m31-xf-2Ln" firstAttribute="leading" secondItem="4kf-7o-rR2" secondAttribute="leading" id="s3V-J5-44F"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="downOrUpButton" destination="Pgd-kK-8WZ" id="mX2-yf-Qo4"/>
+                <outlet property="nameLabel" destination="4kf-7o-rR2" id="B6R-ny-b6h"/>
+                <outlet property="portraitView" destination="Yxm-rc-f5R" id="o4J-kd-a4f"/>
+                <outlet property="timeLabel" destination="m31-xf-2Ln" id="C5e-dx-f7Z"/>
+            </connections>
+            <point key="canvasLocation" x="410" y="521"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_vote" width="17" height="23"/>
+        <image name="portrait_loading" width="57" height="57"/>
+    </resources>
+</document>

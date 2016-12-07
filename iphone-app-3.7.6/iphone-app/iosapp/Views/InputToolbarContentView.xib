@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="InputToolbarContentView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nmn-mb-BTa" customClass="GrowingTextView">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="send" enablesReturnKeyAutomatically="YES"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZoW-aR-Mi5">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="ues-Kg-5FK"/>
+                        <constraint firstAttribute="height" constant="30" id="v0O-mf-12U"/>
+                    </constraints>
+                    <state key="normal" image="toolbar-image">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9R-1C-eAq">
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="Lpo-hW-eTN"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eRC-pd-DkF">
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="TDY-k7-uSb"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXr-SK-BbS" userLabel="emjio Button">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="BJQ-Nt-2SD"/>
+                        <constraint firstAttribute="width" constant="22" id="Tjj-ED-4r7"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="btn_emoji_normal"/>
+                    <state key="highlighted" image="btn_emoji_pressed"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="BJQ-Nt-2SD"/>
+                            <exclude reference="Tjj-ED-4r7"/>
+                        </mask>
+                    </variation>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Nmn-mb-BTa" secondAttribute="bottom" constant="6" id="2DU-YZ-dOB"/>
+                <constraint firstItem="eRC-pd-DkF" firstAttribute="top" secondItem="qXr-SK-BbS" secondAttribute="bottom" constant="7" id="7h5-Wl-9i6"/>
+                <constraint firstItem="M9R-1C-eAq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Cur-Ln-A3U"/>
+                <constraint firstAttribute="bottom" secondItem="eRC-pd-DkF" secondAttribute="bottom" id="Eey-Xj-ZiC"/>
+                <constraint firstAttribute="trailing" secondItem="M9R-1C-eAq" secondAttribute="trailing" id="GNW-pI-7rc"/>
+                <constraint firstItem="Nmn-mb-BTa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Mqg-bl-UI2"/>
+                <constraint firstItem="qXr-SK-BbS" firstAttribute="top" secondItem="M9R-1C-eAq" secondAttribute="bottom" constant="7" id="OAM-cp-o5j"/>
+                <constraint firstAttribute="trailing" secondItem="eRC-pd-DkF" secondAttribute="trailing" id="OKc-7W-MI0"/>
+                <constraint firstAttribute="bottom" secondItem="ZoW-aR-Mi5" secondAttribute="bottom" constant="7" id="Rom-9r-aUz"/>
+                <constraint firstItem="eRC-pd-DkF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="W3F-O5-NRt"/>
+                <constraint firstAttribute="trailing" secondItem="ZoW-aR-Mi5" secondAttribute="trailing" constant="38" id="X4T-dD-YyC"/>
+                <constraint firstItem="ZoW-aR-Mi5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7" id="evL-jl-hFE"/>
+                <constraint firstItem="ZoW-aR-Mi5" firstAttribute="leading" secondItem="Nmn-mb-BTa" secondAttribute="trailing" constant="8" id="pe8-b3-H2t"/>
+                <constraint firstItem="M9R-1C-eAq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rlZ-Vo-WpY"/>
+                <constraint firstItem="Nmn-mb-BTa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="6" id="wux-km-GVh"/>
+                <constraint firstItem="qXr-SK-BbS" firstAttribute="leading" secondItem="ZoW-aR-Mi5" secondAttribute="trailing" constant="8" id="xKa-zj-bl1"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="editingView" destination="Nmn-mb-BTa" id="8c0-U4-XDv"/>
+                <outlet property="emjioButton" destination="qXr-SK-BbS" id="o4I-n6-poY"/>
+                <outlet property="imageButton" destination="ZoW-aR-Mi5" id="nlw-ym-5h6"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_emoji_normal" width="20" height="20"/>
+        <image name="btn_emoji_pressed" width="20" height="20"/>
+        <image name="toolbar-image" width="22" height="22"/>
+    </resources>
+</document>

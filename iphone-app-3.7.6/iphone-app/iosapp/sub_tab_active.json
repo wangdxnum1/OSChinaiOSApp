@@ -1,0 +1,16 @@
+[
+    {
+        "token": "61616161616161",
+        "name": "推荐",
+        "fixed": true,
+        "needLogin": false,
+        "type": 6,
+        "subtype": 1,
+        "order": 1,
+        "href": "https://www.oschina.net/action/apiv2/news",
+        "banner": {
+            "catalog": 1,
+            "href": "https://www.oschina.net/action/apiv2/banner?catalog=1"
+        }
+    }
+]

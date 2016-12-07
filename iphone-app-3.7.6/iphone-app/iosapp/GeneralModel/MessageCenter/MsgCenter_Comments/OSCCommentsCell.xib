@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="199" id="KGk-i7-Jjw" customClass="OSCCommentsCell">
+            <rect key="frame" x="0.0" y="0.0" width="511" height="197"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="511" height="196"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r7r-0f-4ch" userLabel="BG_View">
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HB9-Zy-257">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="c5C-na-uSa"/>
+                            <constraint firstAttribute="height" constant="45" id="pmc-av-y1r"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graphic_one" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rra-TA-teH">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="5hA-Vb-hag"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_comment_30" translatesAutoresizingMaskIntoConstraints="NO" id="FoQ-ZG-xf7">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="SFB-He-Kwl"/>
+                            <constraint firstAttribute="width" constant="15" id="d34-Ay-KkT"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26I-C7-Q21">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.61568627450980395" green="0.61568627450980395" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6分钟前 iPhone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oig-Bt-BEa">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.61568627450980395" green="0.61568627450980395" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brin想写程序：最火的开放语言是什么？最赚钱的语言是什么？最有前途的语言是什么？@空格邓犹豫毁一生踌躇穷三代。投身互联网，成就好未来。巴林的狗尾草Java毁一生C#穷三代，若要好前程，置身IT外。 到底谁说的有道理" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffD-kc-Wb0">
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.12156862745098039" green="0.12941176470588234" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Iib-Xs-Pcg">
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <string key="text">在一个应用中，面对一些必须持久化的敏感数据，为了安全起见，大家通常都会对这些数据进行加密存储，防止用户窃取一些类似Token、AppKey，甚至更为重要的数据。那么下面就模拟一个这样的应用，我们要存储一个用户对象，用户对象中有一个需要受保护的凭证字段，该凭证主要用于和服务端进行通讯。</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Iib-Xs-Pcg" firstAttribute="top" secondItem="Rra-TA-teH" secondAttribute="bottom" constant="6" id="35W-VH-Yh7"/>
+                    <constraint firstItem="26I-C7-Q21" firstAttribute="centerY" secondItem="Oig-Bt-BEa" secondAttribute="centerY" id="3Zm-PB-ZgD"/>
+                    <constraint firstItem="r7r-0f-4ch" firstAttribute="leading" secondItem="Rra-TA-teH" secondAttribute="leading" id="ADR-hm-4o1"/>
+                    <constraint firstAttribute="trailing" secondItem="Iib-Xs-Pcg" secondAttribute="trailing" constant="16" id="E5p-ux-4Gq"/>
+                    <constraint firstItem="HB9-Zy-257" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="F9c-h7-Gye"/>
+                    <constraint firstItem="Oig-Bt-BEa" firstAttribute="leading" secondItem="Rra-TA-teH" secondAttribute="leading" id="I3v-x5-M5V"/>
+                    <constraint firstAttribute="trailing" secondItem="ffD-kc-Wb0" secondAttribute="trailing" constant="34" id="IHa-9Z-52l"/>
+                    <constraint firstItem="HB9-Zy-257" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Mv3-uo-Em5"/>
+                    <constraint firstItem="Oig-Bt-BEa" firstAttribute="top" secondItem="ffD-kc-Wb0" secondAttribute="bottom" constant="21" id="Ru7-Tm-WjX"/>
+                    <constraint firstItem="Rra-TA-teH" firstAttribute="leading" secondItem="HB9-Zy-257" secondAttribute="trailing" constant="8" id="YtR-EB-8TM"/>
+                    <constraint firstItem="Oig-Bt-BEa" firstAttribute="top" secondItem="ffD-kc-Wb0" secondAttribute="bottom" constant="16" id="a2C-QY-ufl"/>
+                    <constraint firstAttribute="trailing" secondItem="r7r-0f-4ch" secondAttribute="trailing" constant="16" id="a4F-s8-pSV"/>
+                    <constraint firstItem="Oig-Bt-BEa" firstAttribute="top" secondItem="r7r-0f-4ch" secondAttribute="bottom" constant="8" id="a6M-Dx-enF"/>
+                    <constraint firstAttribute="trailing" secondItem="Rra-TA-teH" secondAttribute="trailing" constant="16" id="bIi-vr-1Ps"/>
+                    <constraint firstItem="r7r-0f-4ch" firstAttribute="top" secondItem="Iib-Xs-Pcg" secondAttribute="bottom" constant="8" id="bfh-kB-0Zm"/>
+                    <constraint firstAttribute="bottom" secondItem="Oig-Bt-BEa" secondAttribute="bottom" constant="12" id="g4K-Uf-BtO"/>
+                    <constraint firstItem="Oig-Bt-BEa" firstAttribute="leading" secondItem="Rra-TA-teH" secondAttribute="leading" id="imT-n0-YqC"/>
+                    <constraint firstItem="ffD-kc-Wb0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="78" id="jdf-nZ-WLt"/>
+                    <constraint firstItem="FoQ-ZG-xf7" firstAttribute="centerY" secondItem="Oig-Bt-BEa" secondAttribute="centerY" id="kCy-s2-xiv"/>
+                    <constraint firstItem="Iib-Xs-Pcg" firstAttribute="leading" secondItem="HB9-Zy-257" secondAttribute="trailing" constant="8" id="mgw-6k-YkY"/>
+                    <constraint firstAttribute="trailing" secondItem="26I-C7-Q21" secondAttribute="trailing" constant="16" id="n3d-FV-iMV"/>
+                    <constraint firstItem="Rra-TA-teH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="nWy-Yp-fTo"/>
+                    <constraint firstItem="ffD-kc-Wb0" firstAttribute="top" secondItem="Iib-Xs-Pcg" secondAttribute="bottom" constant="16" id="rrW-Pa-83T"/>
+                    <constraint firstItem="26I-C7-Q21" firstAttribute="leading" secondItem="FoQ-ZG-xf7" secondAttribute="trailing" constant="8" id="vNO-sU-NSk"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Ru7-Tm-WjX"/>
+                        <exclude reference="imT-n0-YqC"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="commentCountLabel" destination="26I-C7-Q21" id="veq-UO-N21"/>
+                <outlet property="descTextView" destination="Iib-Xs-Pcg" id="srw-Fd-D9d"/>
+                <outlet property="nameLabel" destination="Rra-TA-teH" id="LLC-8Z-dUZ"/>
+                <outlet property="originDescLabel" destination="ffD-kc-Wb0" id="Qaj-vP-9pG"/>
+                <outlet property="timeAndSourceLabel" destination="Oig-Bt-BEa" id="7kO-jK-9mE"/>
+                <outlet property="userPortraitImageView" destination="HB9-Zy-257" id="24m-mb-JF1"/>
+            </connections>
+            <point key="canvasLocation" x="322.5" y="357.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_comment_30" width="15" height="14"/>
+    </resources>
+</document>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="85" id="KGk-i7-Jjw" customClass="TweetCommentNewCell">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="351" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YlW-Be-4h2" userLabel="portraitIv">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="1Cv-3o-FO0"/>
+                            <constraint firstAttribute="width" constant="32" id="yfP-dI-eEE"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_comment_30" translatesAutoresizingMaskIntoConstraints="NO" id="Uo3-JL-wWQ" userLabel="commentTagIv">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="3Xv-B0-IH5"/>
+                            <constraint firstAttribute="width" constant="18" id="rC3-96-53f"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIW-Af-15L" userLabel="interalTimeLabel">
+                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="10"/>
+                        <color key="textColor" red="0.61568627450980395" green="0.61568627450980395" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHe-pd-xia" userLabel="contentLabel">
+                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="14"/>
+                        <color key="textColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3Y-2g-zVw" userLabel="nameLabel">
+                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="15"/>
+                        <color key="textColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YlW-Be-4h2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="6" id="87a-d8-Oee"/>
+                    <constraint firstItem="xIW-Af-15L" firstAttribute="bottom" secondItem="YlW-Be-4h2" secondAttribute="bottom" id="8ex-BN-82h"/>
+                    <constraint firstItem="Uo3-JL-wWQ" firstAttribute="centerY" secondItem="D3Y-2g-zVw" secondAttribute="centerY" id="Apc-So-GPZ"/>
+                    <constraint firstItem="xIW-Af-15L" firstAttribute="leading" secondItem="YlW-Be-4h2" secondAttribute="trailing" constant="8" id="DWn-7j-rjZ"/>
+                    <constraint firstItem="YlW-Be-4h2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="OFd-lN-NZl"/>
+                    <constraint firstItem="RHe-pd-xia" firstAttribute="top" secondItem="YlW-Be-4h2" secondAttribute="bottom" constant="7" id="OHy-pW-6Ms"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="RHe-pd-xia" secondAttribute="bottom" constant="4" id="PZG-P3-IoF"/>
+                    <constraint firstItem="RHe-pd-xia" firstAttribute="trailing" secondItem="Uo3-JL-wWQ" secondAttribute="trailing" id="QUQ-Ys-oEb"/>
+                    <constraint firstItem="Uo3-JL-wWQ" firstAttribute="leading" secondItem="D3Y-2g-zVw" secondAttribute="trailing" constant="8" id="RPM-4b-X2K"/>
+                    <constraint firstItem="Uo3-JL-wWQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="UIV-Dk-8qd"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Uo3-JL-wWQ" secondAttribute="trailing" constant="8" id="ZoV-Tp-9AE"/>
+                    <constraint firstItem="D3Y-2g-zVw" firstAttribute="top" secondItem="YlW-Be-4h2" secondAttribute="top" id="bq1-tJ-Als"/>
+                    <constraint firstItem="D3Y-2g-zVw" firstAttribute="leading" secondItem="YlW-Be-4h2" secondAttribute="trailing" constant="8" id="cfH-J6-Atl"/>
+                    <constraint firstItem="RHe-pd-xia" firstAttribute="leading" secondItem="D3Y-2g-zVw" secondAttribute="leading" id="gAX-Fj-lfo"/>
+                    <constraint firstItem="D3Y-2g-zVw" firstAttribute="top" secondItem="YlW-Be-4h2" secondAttribute="top" id="mRY-55-czB"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="mRY-55-czB"/>
+                        <exclude reference="Apc-So-GPZ"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="commentTagIv" destination="Uo3-JL-wWQ" id="hu1-wp-FmQ"/>
+                <outlet property="contentLabel" destination="RHe-pd-xia" id="QLy-ZG-0B4"/>
+                <outlet property="interalTimeLabel" destination="xIW-Af-15L" id="adp-HI-irv"/>
+                <outlet property="nameLabel" destination="D3Y-2g-zVw" id="e9e-sI-h3N"/>
+                <outlet property="portraitIv" destination="YlW-Be-4h2" id="SXc-wg-tdM"/>
+            </connections>
+            <point key="canvasLocation" x="345.5" y="401.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_comment_30" width="15" height="14"/>
+    </resources>
+</document>

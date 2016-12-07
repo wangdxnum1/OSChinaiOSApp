@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="76" id="KGk-i7-Jjw" customClass="SoftWareDetailCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_label_recommend-1" translatesAutoresizingMaskIntoConstraints="NO" id="tuS-n7-M6u">
+                        <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="cbr-IU-Z75"/>
+                            <constraint firstAttribute="width" constant="16" id="dUY-gB-Pyv"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_software_default" translatesAutoresizingMaskIntoConstraints="NO" id="RSI-eR-wDa">
+                        <rect key="frame" x="16" y="16" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="SND-19-Gwg"/>
+                            <constraint firstAttribute="width" constant="45" id="Uok-u3-Feg"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaZ-1H-DoH">
+                        <rect key="frame" x="73" y="16" width="231" height="45"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qgP-RB-RXU" userLabel="color_View">
+                        <rect key="frame" x="0.0" y="74" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.78431372549019607" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="7vH-cD-cQL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="RSI-eR-wDa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="36L-xu-Osz"/>
+                    <constraint firstAttribute="trailing" secondItem="qgP-RB-RXU" secondAttribute="trailing" id="4Pm-qw-OUK"/>
+                    <constraint firstItem="VaZ-1H-DoH" firstAttribute="top" secondItem="RSI-eR-wDa" secondAttribute="top" id="Aty-pQ-SfS"/>
+                    <constraint firstAttribute="bottom" secondItem="RSI-eR-wDa" secondAttribute="bottom" constant="14" id="BIJ-4O-h2t"/>
+                    <constraint firstItem="VaZ-1H-DoH" firstAttribute="leading" secondItem="RSI-eR-wDa" secondAttribute="trailing" constant="12" id="DQX-Ys-Qm1"/>
+                    <constraint firstItem="tuS-n7-M6u" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Q3v-h1-IjU"/>
+                    <constraint firstItem="tuS-n7-M6u" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bcY-r5-Y2n"/>
+                    <constraint firstAttribute="bottom" secondItem="qgP-RB-RXU" secondAttribute="bottom" id="bj2-ya-Fa6"/>
+                    <constraint firstItem="qgP-RB-RXU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="eyH-Vu-P6x"/>
+                    <constraint firstItem="RSI-eR-wDa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="hVj-H3-XpV"/>
+                    <constraint firstAttribute="trailing" secondItem="VaZ-1H-DoH" secondAttribute="trailing" constant="16" id="sYd-zC-TIf"/>
+                    <constraint firstAttribute="bottom" secondItem="VaZ-1H-DoH" secondAttribute="bottom" constant="14" id="uBy-Qg-ezy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="softImageView" destination="RSI-eR-wDa" id="xgx-3l-doz"/>
+                <outlet property="tagImageView" destination="tuS-n7-M6u" id="ACh-gN-H3A"/>
+                <outlet property="titleLabel" destination="VaZ-1H-DoH" id="Ijq-Oc-gUl"/>
+            </connections>
+            <point key="canvasLocation" x="231" y="217"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_label_recommend-1" width="16" height="18"/>
+        <image name="logo_software_default" width="45" height="44"/>
+    </resources>
+</document>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActivityDetailViewController">
+            <connections>
+                <outlet property="addButton" destination="neQ-uL-NOh" id="jIi-U2-CtW"/>
+                <outlet property="bottomView" destination="DSP-wG-i2s" id="6vp-0v-ixc"/>
+                <outlet property="commentButton" destination="4U0-nD-MB1" id="3sM-Ok-uSS"/>
+                <outlet property="favButton" destination="t4r-gk-srh" id="50Y-Oa-b65"/>
+                <outlet property="tableView" destination="lSh-tz-Rch" id="lIW-pB-fcO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lSh-tz-Rch">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DSP-wG-i2s">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Llh-6n-hlc" userLabel="color_View">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.78431372549019607" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="YMx-Gb-2a3"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4r-gk-srh">
+                            <rect key="frame" x="0.0" y="1" width="125" height="43"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="-2" maxX="25" maxY="0.0"/>
+                            <state key="normal" title="已收藏" image="ic_faved_pressed">
+                                <color key="titleColor" red="0.41568627450980389" green="0.41568627450980389" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickedButton:" destination="-1" eventType="touchUpInside" id="PED-gV-OB5"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4U0-nD-MB1">
+                            <rect key="frame" x="125" y="1" width="125" height="43"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="13" maxY="3"/>
+                            <state key="normal" title="评论" image="ic_comment_40">
+                                <color key="titleColor" red="0.41568627450000001" green="0.41568627450000001" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickedButton:" destination="-1" eventType="touchUpInside" id="DEK-KY-dWk"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LnG-Yd-z2t">
+                            <rect key="frame" x="125" y="1" width="1" height="43"/>
+                            <color key="backgroundColor" red="0.78431372549019607" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="bfi-e8-ps9"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="neQ-uL-NOh">
+                            <rect key="frame" x="250" y="0.0" width="125" height="44"/>
+                            <color key="backgroundColor" red="0.094117647058823528" green="0.73333333333333328" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                            <state key="normal" title="我要报名" image="ic_user_add-1">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickedButton:" destination="-1" eventType="touchUpInside" id="yAH-ax-QOb"/>
+                                <action selector="settingTouchDownColor:" destination="-1" eventType="touchDown" id="YP0-XC-u4Y"/>
+                                <action selector="settingTouchUp:" destination="-1" eventType="touchUpInside" id="b5Y-wO-pjs"/>
+                                <action selector="settingTouchUp:" destination="-1" eventType="touchUpOutside" id="xpq-IV-YtC"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="t4r-gk-srh" secondAttribute="bottom" id="1yx-fj-Jl2"/>
+                        <constraint firstItem="neQ-uL-NOh" firstAttribute="width" secondItem="t4r-gk-srh" secondAttribute="width" id="21z-nD-mSt"/>
+                        <constraint firstItem="neQ-uL-NOh" firstAttribute="leading" secondItem="4U0-nD-MB1" secondAttribute="trailing" id="5N5-jB-K1k"/>
+                        <constraint firstAttribute="bottom" secondItem="neQ-uL-NOh" secondAttribute="bottom" id="5Yd-ar-dX2"/>
+                        <constraint firstAttribute="trailing" secondItem="neQ-uL-NOh" secondAttribute="trailing" id="9IB-vi-d0z"/>
+                        <constraint firstItem="t4r-gk-srh" firstAttribute="leading" secondItem="DSP-wG-i2s" secondAttribute="leading" id="CIv-d0-3DC"/>
+                        <constraint firstItem="LnG-Yd-z2t" firstAttribute="top" secondItem="Llh-6n-hlc" secondAttribute="bottom" id="E7Q-Pg-9fg"/>
+                        <constraint firstItem="LnG-Yd-z2t" firstAttribute="leading" secondItem="t4r-gk-srh" secondAttribute="trailing" id="Elc-Hr-P26"/>
+                        <constraint firstAttribute="height" constant="44" id="IRY-Vz-0Xq"/>
+                        <constraint firstItem="neQ-uL-NOh" firstAttribute="top" secondItem="DSP-wG-i2s" secondAttribute="top" id="NJU-co-9Ln"/>
+                        <constraint firstItem="Llh-6n-hlc" firstAttribute="leading" secondItem="DSP-wG-i2s" secondAttribute="leading" id="aW0-CC-I6k"/>
+                        <constraint firstItem="4U0-nD-MB1" firstAttribute="top" secondItem="Llh-6n-hlc" secondAttribute="bottom" id="ejm-Jj-d7g"/>
+                        <constraint firstItem="Llh-6n-hlc" firstAttribute="top" secondItem="DSP-wG-i2s" secondAttribute="top" id="sn4-l7-lde"/>
+                        <constraint firstAttribute="bottom" secondItem="4U0-nD-MB1" secondAttribute="bottom" id="uBw-of-5Gz"/>
+                        <constraint firstAttribute="bottom" secondItem="LnG-Yd-z2t" secondAttribute="bottom" id="vkk-LC-bUa"/>
+                        <constraint firstItem="4U0-nD-MB1" firstAttribute="width" secondItem="t4r-gk-srh" secondAttribute="width" id="xDl-OI-Kca"/>
+                        <constraint firstItem="4U0-nD-MB1" firstAttribute="leading" secondItem="t4r-gk-srh" secondAttribute="trailing" id="zAf-p9-1Zn"/>
+                        <constraint firstItem="t4r-gk-srh" firstAttribute="top" secondItem="Llh-6n-hlc" secondAttribute="bottom" id="zOG-MB-Ixb"/>
+                        <constraint firstAttribute="trailing" secondItem="Llh-6n-hlc" secondAttribute="trailing" id="zPl-5A-ccq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="DSP-wG-i2s" secondAttribute="bottom" id="ADU-tP-5By"/>
+                <constraint firstItem="lSh-tz-Rch" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="F7r-Ns-dnJ"/>
+                <constraint firstItem="DSP-wG-i2s" firstAttribute="top" secondItem="lSh-tz-Rch" secondAttribute="bottom" id="Jfx-dp-yVl"/>
+                <constraint firstItem="lSh-tz-Rch" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QFg-3A-Pi9"/>
+                <constraint firstAttribute="trailing" secondItem="lSh-tz-Rch" secondAttribute="trailing" id="ReW-GF-Ah4"/>
+                <constraint firstItem="DSP-wG-i2s" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aHl-o6-Mto"/>
+                <constraint firstAttribute="trailing" secondItem="DSP-wG-i2s" secondAttribute="trailing" id="dKe-1f-OXg"/>
+                <constraint firstItem="DSP-wG-i2s" firstAttribute="top" secondItem="lSh-tz-Rch" secondAttribute="bottom" id="y0h-Et-IvY"/>
+            </constraints>
+            <point key="canvasLocation" x="78.5" y="359.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_comment_40" width="20" height="20"/>
+        <image name="ic_faved_pressed" width="20" height="20"/>
+        <image name="ic_user_add-1" width="16" height="21"/>
+    </resources>
+</document>

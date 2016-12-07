@@ -1,0 +1,25 @@
+{{< html/newTweet }}
+    {{$ body }}
+    
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link href="css/detail.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body class="newTweetDetail {{# night }}night{{/}}">
+    {{{ content }}}
+    <br />
+
+    {{# imageURL }}
+    <a href="{{imageURL}}">
+        <img src="{{imageURL}}"/>
+    </a>
+    {{/}}
+    
+    {{# audioURL }}
+    <audio controls>
+        <source src="{{audioURL}}?avthumb.mp3" type="audio/mpeg">
+            </audio>
+    {{/}}
+    </body>
+    {{/}}
+    {{/}}

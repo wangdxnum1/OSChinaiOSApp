@@ -1,0 +1,25 @@
+{{< html/base }}
+    {{$ body }}
+        <div id="title_div">
+            <b>{{title}}</b>
+            <div id="pub_info">
+                <a href="http://my.oschina.net/u/{{authorID}}" class="author">{{authorName}}</a> 发表于 {{timeInterval}}
+            </div>
+        </div>
+        
+        <main>{{{content}}}</main>
+        
+        {{#softwareName}}
+            <div class="more_about">更多关于: <a href="{{softwareLink}}">{{softwareName}}</a> 的详细信息</div>
+        {{/}}
+        
+        {{#tags}}
+            {{{tags}}}
+        {{/}}
+        
+        {{#relatedInfo}}
+            <hr />
+            <div>{{{relatedInfo}}}</div>
+        {{/}}
+    {{/}}
+{{/}}

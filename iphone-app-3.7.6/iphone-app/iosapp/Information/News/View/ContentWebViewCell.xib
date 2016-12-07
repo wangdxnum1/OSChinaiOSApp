@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="55" id="KGk-i7-Jjw" customClass="ContentWebViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="327" height="54"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qJn-D5-iaB">
+                        <rect key="frame" x="16" y="4" width="295" height="38"/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                    </webView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qJn-D5-iaB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="26N-eh-Ix2"/>
+                    <constraint firstAttribute="bottom" secondItem="qJn-D5-iaB" secondAttribute="bottom" constant="12" id="Ntc-dz-U2U"/>
+                    <constraint firstItem="qJn-D5-iaB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="OTF-FJ-09p"/>
+                    <constraint firstAttribute="trailing" secondItem="qJn-D5-iaB" secondAttribute="trailing" constant="16" id="vjh-ea-Mmy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentWebView" destination="qJn-D5-iaB" id="zXq-LX-klv"/>
+            </connections>
+            <point key="canvasLocation" x="350.5" y="362.5"/>
+        </tableViewCell>
+    </objects>
+</document>

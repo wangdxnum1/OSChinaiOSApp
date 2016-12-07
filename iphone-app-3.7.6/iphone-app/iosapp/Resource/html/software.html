@@ -1,0 +1,65 @@
+{{< html/base }}
+    {{$ body }}
+        <div id="title_div">
+            <img id="software_logo" src="{{logoURL}}" />
+            <b>{{title}}</b>
+            {{#recommended}}<img id="recommend_tag" src="recommend_tag.png" />{{/}}
+        </div>
+        
+        <main>
+            {{{content}}}
+            
+            <br />
+            
+            <table id="software_information">
+                {{#authorID}}
+                    <tr>
+                        <th>软件作者</th>
+                        <td class="author">
+                            <a href="http://my.oschina.net/u/{{authorID}}" class="author">{{author}}</a>
+                        </td>
+                    </tr>
+                {{/}}
+                <tr>
+                    <th>授权协议</th>
+                    <td>{{license}}</th>
+                </tr>
+                <tr>
+                    <th>开发语言</th>
+                    <td>{{language}}</td>
+                </tr>
+                <tr>
+                    <th>操作系统</th>
+                    <td>{{os}}</td>
+                </tr>
+                <tr>
+                    <th>收录时间</th>
+                    <td>{{recordTime}}</td>
+                </tr>
+            </table>
+            
+            <br />
+            
+            <div id="software_buttons">
+                {{#homepageURL}}
+<!--                <form action="{{homepageURL}}">-->
+<!--                    <input type="button" value="软件首页">-->
+<!--                </form>-->
+                <div>
+                    <button onclick="location.href='{{homepageURL}}'">软件首页</button>
+                </div>
+                {{/}}
+                {{#documentURL}}
+                <div>
+                    <button onclick="location.href='{{documentURL}}'">软件文档</button>
+                </div>
+                {{/}}
+                {{#downloadURL}}
+                <div>
+                    <button onclick="location.href='{{downloadURL}}'">软件下载</button>
+                </div>
+                {{/}}
+            </div>
+        </main>
+    {{/}}
+{{/}}

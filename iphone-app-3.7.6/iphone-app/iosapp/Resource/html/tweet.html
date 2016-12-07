@@ -1,0 +1,28 @@
+{{< html/base }}
+    {{$ body }}
+
+        <style>
+            a {color: #087221;}
+            body {
+                color: #333;
+                font-weight: bold;
+                line-height: 135%;
+            }
+        </style>
+        
+        {{{ content }}}
+        <br />
+        
+        {{# imageURL }}
+        <a href="{{imageURL}}">
+            <img src="{{imageURL}}"/>
+        </a>
+        {{/}}
+        
+        {{# audioURL }}
+        <audio controls>
+            <source src="{{audioURL}}?avthumb.mp3" type="audio/mpeg">
+        </audio>
+        {{/}}
+    {{/}}
+{{/}}

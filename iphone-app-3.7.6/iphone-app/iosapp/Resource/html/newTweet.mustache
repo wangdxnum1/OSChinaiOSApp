@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="css/detail.css" rel="stylesheet" type="text/css" />
+
+<link href="css/styles/shCore.css" rel="stylesheet" type="text/css" />
+{{# night }}
+<link href="css/styles/shThemeDjango.css" rel="stylesheet" type="text/css" />
+{{^}}
+<link href="css/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+{{/}}
+
+</head>
+
+<body {{# night }}class="night"{{/}}>
+{{$ body }}
+{{/}}
+
+<script type="text/javascript">
+window.alert = function() {};
+
+SyntaxHighlighter.all()
+
+var img_list = document.getElementsByTagName("img");
+
+for (var i = 0; i < img_list.length; i++) {
+var img = img_list[i];
+
+if (img.alt.length) {continue;}
+
+var wrapper = document.createElement("a");
+wrapper.href = img.src;
+wrapper.appendChild(img.parentNode.replaceChild(wrapper, img));
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OSCRandomGiftLargerImageView">
+            <rect key="frame" x="0.0" y="0.0" width="502" height="231"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qaW-5x-5Zm">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="xGQ-SD-zdt"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="750元阿里云代金券" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPs-v7-e2Y">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="86" id="V2c-Hv-lGe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aY6-ek-ygX">
+                    <color key="backgroundColor" red="0.7843137255" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="继续摇奖">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickLeftItem:" destination="iN0-l3-epB" eventType="touchUpInside" id="36g-UK-NX7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJl-fr-dBc">
+                    <color key="backgroundColor" red="0.14117647059999999" green="0.81176470590000005" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="免费领取">
+                        <color key="titleColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickRightItem:" destination="iN0-l3-epB" eventType="touchUpInside" id="LeJ-24-MRv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="aY6-ek-ygX" firstAttribute="top" secondItem="tPs-v7-e2Y" secondAttribute="bottom" id="4w8-ok-eeI"/>
+                <constraint firstAttribute="bottom" secondItem="PJl-fr-dBc" secondAttribute="bottom" id="6RN-V7-mWE"/>
+                <constraint firstAttribute="bottom" secondItem="aY6-ek-ygX" secondAttribute="bottom" id="Dig-qO-RMy"/>
+                <constraint firstItem="qaW-5x-5Zm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="FEN-9B-Nts"/>
+                <constraint firstAttribute="trailing" secondItem="tPs-v7-e2Y" secondAttribute="trailing" id="LSf-JK-Fk5"/>
+                <constraint firstItem="PJl-fr-dBc" firstAttribute="top" secondItem="tPs-v7-e2Y" secondAttribute="bottom" id="Y9d-YP-yCG"/>
+                <constraint firstItem="PJl-fr-dBc" firstAttribute="leading" secondItem="aY6-ek-ygX" secondAttribute="trailing" id="aBP-8x-R0d"/>
+                <constraint firstItem="qaW-5x-5Zm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cBX-Y6-y81"/>
+                <constraint firstItem="tPs-v7-e2Y" firstAttribute="top" secondItem="qaW-5x-5Zm" secondAttribute="bottom" id="kHh-0O-3pN"/>
+                <constraint firstItem="aY6-ek-ygX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qIj-Sf-fVp"/>
+                <constraint firstAttribute="trailing" secondItem="qaW-5x-5Zm" secondAttribute="trailing" id="ss1-AK-aKl"/>
+                <constraint firstItem="tPs-v7-e2Y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vdM-lH-hkD"/>
+                <constraint firstItem="PJl-fr-dBc" firstAttribute="width" secondItem="aY6-ek-ygX" secondAttribute="width" id="xI0-kj-mAf"/>
+                <constraint firstAttribute="trailing" secondItem="PJl-fr-dBc" secondAttribute="trailing" id="ydY-1b-miC"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="discoverImageView" destination="qaW-5x-5Zm" id="9Cu-FS-bk9"/>
+                <outlet property="giftDescLabel" destination="tPs-v7-e2Y" id="Aum-zq-ajn"/>
+                <outlet property="leftItemButton" destination="aY6-ek-ygX" id="JTT-mT-vgF"/>
+                <outlet property="rightItemButton" destination="PJl-fr-dBc" id="FdD-UN-hyi"/>
+            </connections>
+            <point key="canvasLocation" x="-85" y="193.5"/>
+        </view>
+    </objects>
+</document>

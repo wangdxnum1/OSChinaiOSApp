@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="112" id="KGk-i7-Jjw" customClass="OSCListNomalCell">
+            <rect key="frame" x="0.0" y="0.0" width="467" height="112"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="467" height="111"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oep-gq-vYi">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="110" id="Uot-Ha-uef"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fun-sm-ZgT">
+                        <string key="text">Mach中，所有东西都是通过自己的对象实现的。进程、线程和虚拟内存都是对象，所有的对象都有自己的属性。Mach采用消息传递的方式实现对象与对象之间的通信。Mach对象不能直接调用另一个对象，只能传递消息，源对象发送一条消息，这条消息加入到目标对象的队列中等待处理。如果产生应答，则通过另一条消息传递回去，消息遵从FIFO方式
+
+文／鱼王00（简书作者）
+原文链接：http://www.jianshu.com/p/a764aad31847
+著作权归作者所有，转载请联系作者获得授权，并标注“简书作者”。</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开源中国客户端发布" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="po7-s0-qJh">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6598跟帖" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgV-G3-HaY">
+                        <color key="backgroundColor" red="0.7843137255" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0h-SB-ppm">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="3g1-Jf-DW2"/>
+                            <constraint firstAttribute="width" constant="50" id="kNb-ro-Ol3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="X">
+                            <color key="titleColor" red="0.7843137255" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oep-gq-vYi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="0y3-0N-e7c"/>
+                    <constraint firstItem="Fun-sm-ZgT" firstAttribute="leading" secondItem="oep-gq-vYi" secondAttribute="trailing" constant="10" id="7kI-TH-0jX"/>
+                    <constraint firstAttribute="bottom" secondItem="po7-s0-qJh" secondAttribute="bottom" constant="8" id="8Ah-JP-ZpQ"/>
+                    <constraint firstItem="po7-s0-qJh" firstAttribute="leading" secondItem="oep-gq-vYi" secondAttribute="trailing" constant="10" id="Ah0-un-ZSb"/>
+                    <constraint firstItem="W0h-SB-ppm" firstAttribute="centerY" secondItem="po7-s0-qJh" secondAttribute="centerY" id="CGP-P4-zxd"/>
+                    <constraint firstItem="oep-gq-vYi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Etc-uO-j5I"/>
+                    <constraint firstAttribute="bottom" secondItem="oep-gq-vYi" secondAttribute="bottom" constant="8" id="GcM-lv-Clc"/>
+                    <constraint firstAttribute="trailing" secondItem="Fun-sm-ZgT" secondAttribute="trailing" constant="8" id="WIb-Ae-GmD"/>
+                    <constraint firstAttribute="trailing" secondItem="wgV-G3-HaY" secondAttribute="trailing" constant="16" id="aQb-3H-Qh8"/>
+                    <constraint firstAttribute="trailing" secondItem="W0h-SB-ppm" secondAttribute="trailing" constant="2" id="bRQ-ZJ-5X1"/>
+                    <constraint firstItem="Fun-sm-ZgT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="fy0-if-l1p"/>
+                    <constraint firstItem="wgV-G3-HaY" firstAttribute="centerY" secondItem="po7-s0-qJh" secondAttribute="centerY" id="tMN-bn-yL4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="categoryLable" destination="po7-s0-qJh" id="in1-10-syH"/>
+                <outlet property="commentCountLable" destination="wgV-G3-HaY" id="HVS-be-9ay"/>
+                <outlet property="deleteBtn" destination="W0h-SB-ppm" id="EzR-1d-Rgw"/>
+                <outlet property="picImageView" destination="oep-gq-vYi" id="gfw-Sc-mtG"/>
+                <outlet property="titleLable" destination="Fun-sm-ZgT" id="X81-Ui-lSI"/>
+            </connections>
+            <point key="canvasLocation" x="-77.5" y="-32"/>
+        </tableViewCell>
+    </objects>
+</document>
